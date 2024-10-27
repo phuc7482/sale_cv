@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>BisLite - Trang chủ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            iframe {
+                display: block; /* Bỏ khoảng cách inline */
+                width: 100%;
+                height: 500px; /* Chiều cao tùy ý */
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="container">
+                        <h4 class="name">
+                            <a href="" style="text-decoration: none;">
+                                <span class="header_bis">Bis</span>
+                                <span class="header_lite">Lite</span>
+                            </a>
+                        </h4>
+                        <ul class="main_menu">
+                            <li class="">
+                                <a href="">HOME</a>
+                            </li>
+                            <li class="">
+                                <a href="">ABOUT US</a>
+                            </li>
+                            <li class="">
+                                    <a href="">
+                                        SERVICES
+                                    </a>
+                                <ul class="menu-items">
+                                    <li><a href="">Web Design</a></li>
+                                    <li><a href="">Wordpress Design</a></li>
+                                    <li><a href="">Mobile App Development</a></li>
+                                    <li><a href="">Internet Marketing</a></li>
+                                    <li><a href="">Social Media Management</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="">PORTFOLIO</a>
+                                <ul class="menu-items">
+                                    <li><a href="">Web Design</a></li>
+                                    <li><a href="">Wordpress Design</a></li>
+                                    <li><a href="">Mobile App Development</a></li>
+                                    <li><a href="">Internet Marketing</a></li>
+                                    <li><a href="">Social Media Management</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="">BLOG</a>
+                            </li>
+                            <li class="">
+                                <a href="">CONTACT US</a>
+                            </li>
+                        </ul>
+            </nav>
+        </div>        
+        <iframe src="./slide/slide.html" style="width: 100%; height: 650px; border: none;" frameborder="0"></iframe>
+        <iframe src="./components/information_web.html" style="width: 100%; height: 280px; border: none;" frameborder="0"></iframe>
+        <iframe src="./components/home.html" style="width: 100%; height: 830px; border: none;" frameborder="0"></iframe>
+        <iframe src="./components/footer.html" style="width: 100%; height: 290px; border: none;" frameborder="0"></iframe>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.menu-items').parent('li').addClass('has-child');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: rgb(231, 226, 226);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 90%;
+}
+.container{
+    max-width: 100%;
+    margin: 0px auto;
+}
+.name{
+    padding: 5px 10px;
+    margin: center;
+}
+
+.name span{
+    font-size: 50px;
+    height: auto;
+}
+
+.name .header_bis{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.name .header_lite{
+    color: rgb(0, 204, 255);
+    font-family: sans-serif;
+}
+
+.main_menu{
+    display: flex;
+    list-style: none;
+    margin: center;
+    padding: 0;
+}
+
+.main_menu li{
+    position: relative;
+    padding: 5px 10px;
+}
+
+.main_menu li a{
+    color: black;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_menu li:hover{
+    background-color: white;
+    height: 70%;
+}
+
+.main_menu ul.menu-items{
+    position: absolute;
+    background-color: white;
+    padding: 15px 0px;
+    font-size: 15px;
+    list-style: none;
+    width: 240px;
+    border: 1px solid rgb(236, 232, 232);
+    display: none;
+    left: 0px;
+}
+
+.main_menu li:hover>ul.menu-items{
+    display: block;
+}
+
+.main_menu ul.menu-items a{
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(112, 110, 110);
+    left: 0;
+    font-size: 15px;
+}
+
+.main_menu ul.menu-items li:hover a{
+    border-bottom: 1px solid rgb(172, 167, 167);
+}
+
+.main_menu ul.menu-items li:last-child a{
+    border-bottom: 3px solid rgb(0, 132, 255);
+    padding-bottom: 20px;
+}
+
+.main_menu>li{
+    position: relative;
+}
+
+.main_menu>li::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: rgb(0, 132, 255);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main_menu>li:hover::before{
+    width: 100%;
+    top: 0px;
+}
+
+.main_menu .menu-items li:hover>a{
+    color: rgb(0, 132, 255);
+    display: block;
+}
+
+.main_menu>li.has-child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 25px 5px;
+}
+
+.main_menu .menu-items>li.has-child:hover::after{
+    color: black;
+}
